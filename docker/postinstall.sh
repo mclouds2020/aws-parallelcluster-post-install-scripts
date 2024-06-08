@@ -76,6 +76,8 @@ fi
 
 nvidia-ctk runtime configure --runtime=docker
 systemctl restart docker
+pip3 install ray[all]
+pip3 install "urllib3 <=1.26.15"
 
 echo "
 ############################################
